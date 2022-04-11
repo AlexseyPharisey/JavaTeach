@@ -1,0 +1,19 @@
+// Пример использования статической переменной в нестатическом методе (True)
+
+public class StaticVariable {
+    static int a1 = 10;
+    void abc(int x){
+        int result = a1 + x;
+        System.out.println("Result = " + result);
+    }
+}
+
+// Пример использования статической переменной в статическом методе (True)
+
+class NonStaticVariable{
+    public static int a2 = 100;
+    static void abc(int x1){
+        int result = a2+x1;
+        System.out.println("Result = " + result);
+    }
+}
