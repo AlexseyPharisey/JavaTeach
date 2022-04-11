@@ -17,3 +17,13 @@ class NonStaticVariable{
         System.out.println("Result = " + result);
     }
 }
+
+// Пример использования нестатической переменной в статическом методе (False)
+
+class NonStaticVariable{
+    public int a2 = 100;
+    static void abc(int x1){
+        int result = a2+x1;
+        System.out.println("Result = " + result);
+    }
+}
