@@ -1,0 +1,8 @@
+// Пример использования нестатических методов внутри статического класса (True)
+
+public class StaticClass {
+    static class TestStaticClass{
+        void a(){}
+        void b(){}
+    }
+}
