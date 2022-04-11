@@ -1,0 +1,22 @@
+// Пример вызова статического метода в нестатическом методе (True)
+
+static int Sum(int x, int y){
+  int result = x+y;
+  return result;
+}
+
+void SumMulti(int x, int y){
+  int Multi = x*y;
+  int Sum = Sum(x,y) + Multi;
+  System.out.println("Summma + multiplication = " + Sum);
+}
+
+// Пример вызова нестатического метода в статическом (False)
+
+void OutputM(String a){
+  System.out.println(a);
+}
+
+static void InputM(String a){
+  OutputM(a);
+}
